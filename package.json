@@ -1,0 +1,9 @@
+{
+  "name": "hokkaido-trip",
+  "version": "1.0.0",
+  "private": true,
+  "description": "北海道 2026 行程网页（12/1–8：Tomamu・小樽・札幌）",
+  "scripts": {
+    "dev": "node serve.mjs"
+  }
+}

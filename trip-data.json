@@ -1,0 +1,2145 @@
+{
+  "$schema": "./schemas/trip-data.schema.json",
+  "schemaVersion": "2.0-lite",
+  "config": {
+    "schemaVersion": "1.0.0",
+    "modules": {
+      "flights": true,
+      "overview": true,
+      "itinerary": true,
+      "todo": true,
+      "driving": false,
+      "ledger": false
+    },
+    "language": "zh-CN",
+    "persistence": {
+      "mode": "local"
+    }
+  },
+  "metadata": {
+    "tripId": "hokkaido-2026-12",
+    "title": "北海道 2026｜Tomamu・小樽・札幌（12/1–8）",
+    "language": "zh-CN",
+    "timeZone": "Asia/Tokyo",
+    "assets": {
+      "routeMaps": [
+        "assets/maps/hokkaido-base.png"
+      ]
+    }
+  },
+  "trip": {
+    "status": "draft",
+    "startDate": "2026-12-01",
+    "endDate": "2026-12-08",
+    "dayCount": 8,
+    "nightCountAway": 7,
+    "countries": [
+      {
+        "code": "JP",
+        "name": "Japan",
+        "nameZh": "日本",
+        "nameEn": "JAPAN"
+      }
+    ],
+    "primaryDestinationCountries": [
+      "JP"
+    ],
+    "citiesAndAreas": [
+      "Tomamu",
+      "札幌",
+      "小樽"
+    ],
+    "routeSummary": "新千歲機場 → Tomamu（滑雪 3 晚）→ 札幌（4 晚，12/4 爸爸加入）→ 小樽日歸（天狗山）→ 新千歲機場回港"
+  },
+  "flightJourneys": [
+    {
+      "id": "j-out-am",
+      "title": "去程 12/1 香港 → 札幌（你＋媽媽）"
+    },
+    {
+      "id": "j-out-dad",
+      "title": "去程 12/4 香港 → 札幌（爸爸）"
+    },
+    {
+      "id": "j-back",
+      "title": "回程 12/8 札幌 → 香港"
+    }
+  ],
+  "flights": [
+    {
+      "id": "f1",
+      "journeyId": "j-out-am",
+      "sequence": 1,
+      "airline": {
+        "nameZh": "國泰航空"
+      },
+      "flightNumber": "CX580",
+      "departure": {
+        "airportCode": "HKG",
+        "city": "香港 T1",
+        "date": "2026-12-01",
+        "time": "09:10",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "CTS",
+        "city": "新千歲 CTS",
+        "date": "2026-12-01",
+        "time": "14:50",
+        "utcOffset": "+09:00"
+      }
+    },
+    {
+      "id": "f2",
+      "journeyId": "j-out-dad",
+      "sequence": 1,
+      "airline": {
+        "nameZh": "大灣區航空"
+      },
+      "flightNumber": "HB2882",
+      "departure": {
+        "airportCode": "HKG",
+        "city": "香港 T2",
+        "date": "2026-12-04",
+        "time": "08:00",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "CTS",
+        "city": "新千歲 CTS",
+        "date": "2026-12-04",
+        "time": "13:50",
+        "utcOffset": "+09:00"
+      }
+    },
+    {
+      "id": "f3",
+      "journeyId": "j-back",
+      "sequence": 1,
+      "airline": {
+        "nameZh": "大灣區航空（爸爸）"
+      },
+      "flightNumber": "HB881",
+      "departure": {
+        "airportCode": "CTS",
+        "city": "新千歲 CTS",
+        "date": "2026-12-08",
+        "time": "16:00",
+        "utcOffset": "+09:00"
+      },
+      "arrival": {
+        "airportCode": "HKG",
+        "city": "香港 T1",
+        "date": "2026-12-08",
+        "time": "21:15",
+        "utcOffset": "+08:00"
+      }
+    },
+    {
+      "id": "f4",
+      "journeyId": "j-back",
+      "sequence": 2,
+      "airline": {
+        "nameZh": "國泰航空（你＋媽媽）"
+      },
+      "flightNumber": "CX581",
+      "departure": {
+        "airportCode": "CTS",
+        "city": "新千歲 CTS",
+        "date": "2026-12-08",
+        "time": "16:05",
+        "utcOffset": "+09:00"
+      },
+      "arrival": {
+        "airportCode": "HKG",
+        "city": "香港 T1",
+        "date": "2026-12-08",
+        "time": "20:55",
+        "utcOffset": "+08:00"
+      }
+    }
+  ],
+  "accommodations": [
+    {
+      "id": "stay-risonare",
+      "name": "RISONARE Tomamu（北海道勇拂郡占冠村字中トマム；入住 15:00 後，退房 11:00 前；房價已含早餐＋滑雪纜車券，12/1–12/4 三晚）",
+      "nights": [
+        "2026-12-01",
+        "2026-12-02",
+        "2026-12-03"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "stay-monterey",
+      "name": "Hotel Monterey Edelhof Sapporo 札幌蒙特利埃德爾霍夫（中央區北2条西1丁目1；入住 15:00 後，退房 11:00 前；Trip.com 訂單 1359048291390311，12/4–12/8 四晚）",
+      "nights": [
+        "2026-12-04",
+        "2026-12-05",
+        "2026-12-06",
+        "2026-12-07"
+      ],
+      "status": "confirmed"
+    }
+  ],
+  "groundTransport": {
+    "rentalCar": null,
+    "rentalChecklist": [],
+    "drivingNotes": [],
+    "drivingReferenceLinks": [],
+    "plannedRoadLegs": [],
+    "publicTransitAndRail": [
+      {
+        "name": "滑雪場巴士（12/1 去程／12/4 回程，已訂）",
+        "note": "去程 12/1 16:30 新千歲國際線航站樓 707 班次 → Tomamu The Tower（預約編號 2612010000010）；回程 12/4 08:40 Tomamu The Tower 7702 班次 → 札幌新大谷酒店（預約編號 2612040000007）。集合時間前 15 分鐘報到。"
+      },
+      {
+        "name": "JR（札幌 ⇄ 新千歲／小樽）",
+        "note": "全程唔使搭新幹線。札幌⇄新千歲機場快速約 37–40 分鐘、札幌⇄小樽約 35–40 分鐘，全部係自由席，唔使劃位唔使預約，IC 卡（Suica／Kitaca）拍卡入閘就得。成個trip要預約嘅交通只有機場⇄Tomamu 巴士（已訂 ✅）；天狗山纜車、藻岩山纜車都係現場買票。"
+      },
+      {
+        "name": "札幌市營地鐵＋巴士",
+        "note": "南北線／東西線／東豐線；去白色戀人公園搭東西線到宮の沢。小樽天狗山搭中央巴士「天狗山ロープウェイ線」約 20 分鐘。"
+      }
+    ]
+  },
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-12-01",
+      "title": "出發 → 新千歲 → 入 Tomamu",
+      "locations": [
+        "香港",
+        "新千歲機場",
+        "Tomamu"
+      ],
+      "schedule": [
+        {
+          "id": "d1-1",
+          "time": "09:10",
+          "type": "flight",
+          "text": "CX580 香港 T1 起飛（國泰，你＋媽媽）",
+          "placeId": "cts"
+        },
+        {
+          "id": "d1-2",
+          "time": "14:50",
+          "type": "flight",
+          "text": "抵達新千歲機場 CTS，過關拎行李",
+          "placeId": "cts"
+        },
+        {
+          "id": "d1-3",
+          "time": "15:30",
+          "type": "note",
+          "text": "機場食個下午茶／便利店補給，16:15 前去巴士集合點",
+          "placeId": "cts"
+        },
+        {
+          "id": "d1-4",
+          "time": "16:30",
+          "type": "transfer",
+          "text": "滑雪場巴士 707 班次：新千歲（國際線航站樓）→ Tomamu The Tower（預約編號 2612010000010；提前 15 分鐘報到）",
+          "placeIds": [
+            "cts",
+            "tomamu-tower"
+          ]
+        },
+        {
+          "id": "d1-5",
+          "time": "19:00",
+          "type": "transfer",
+          "text": "落車點係 The Tower，轉度假村接駁車上 RISONARE check-in（15:00 後）",
+          "placeId": "risonare"
+        },
+        {
+          "id": "d1-6",
+          "time": "18:00",
+          "type": "restaurant",
+          "text": "晚餐：森林餐廳 Nininupuri 自助餐（大人 ¥5,500；17:00–20:30，唔接受預約——到埗日唔使趕，check-in 後落去就得；推介：星野農場現做莫札瑞拉芝士 pizza、DIY 霜淇淋、牛肉鐵板燒、海寶丼）",
+          "placeId": "risonare"
+        },
+        {
+          "id": "d1-7",
+          "time": "21:00",
+          "type": "walk",
+          "text": "木林之湯雪中露天風呂，早啲休息聽日滑雪",
+          "placeId": "kirin-no-yu"
+        }
+      ],
+      "mapStops": [
+        "cts",
+        "tomamu-tower",
+        "risonare"
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2026-12-02",
+      "title": "Tomamu 滑雪日 ①",
+      "locations": [
+        "Tomamu"
+      ],
+      "schedule": [
+        {
+          "id": "d2-1",
+          "time": "08:00",
+          "type": "restaurant",
+          "text": "早餐（房價已包早餐券）：你揀咗森林餐廳（海寶丼 DIY）；想轉 SORA 31F 靚景早餐（¥3,000，可用早餐券）→ check-in 後櫃台／內線 6365 預約；或 Mikaku 和食",
+          "placeId": "risonare"
+        },
+        {
+          "id": "d2-2",
+          "time": "09:00",
+          "type": "note",
+          "text": "★ 霧冰平台：朝早第一班上雲海纜車（9:00 開，13 分鐘到 1088m 山頂）——12 月霧冰出現率約 72% 全年最高，朝早最靚；RISONARE 住客免費搭；12月上行尾班 15:00",
+          "placeId": "tomamu-gondola"
+        },
+        {
+          "id": "d2-3",
+          "time": "10:45",
+          "type": "note",
+          "text": "滑雪日開始：房價包纜車券；雪服雪褲護目鏡等裝備喺 Tower base 租借店租（唔使帶都可以）",
+          "placeId": "tomamu-tower"
+        },
+        {
+          "id": "d2-4",
+          "time": "12:30",
+          "type": "restaurant",
+          "text": "午餐（雪場 hotalu street，walk-in 到時揀，人均約 ¥1,000–2,000）：CAMARO 牛排（北海道稀少牛「昆布黑」窯烤）／GARAKU 湯咖喱（札幌名店分店，唔使排長龍）／麵屋竹藏（海鮮高湯拉麵）／GIN 海鮮丼×洋酒",
+          "placeId": "tomamu-tower"
+        },
+        {
+          "id": "d2-5",
+          "time": "14:00",
+          "type": "note",
+          "text": "下午繼續滑雪；如果朝早天氣差睇唔到霧冰，15:00 前可以再上一次（上行尾班 15:00）",
+          "placeId": "tomamu-gondola"
+        },
+        {
+          "id": "d2-6",
+          "time": "17:00",
+          "type": "walk",
+          "text": "Mina-Mina Beach 室內造浪泳池／木林之湯",
+          "placeId": "minamina"
+        },
+        {
+          "id": "d2-7",
+          "time": "17:30",
+          "type": "restaurant",
+          "text": "晚餐：hal 自助餐 ✅ 已訂位（訂位號 72628，17:30 入座，2 位，現地付款 ¥11,000；蟹×三文魚主題，蟹甲羅燒＋即煎鐵板牛扒；90 分鐘制；Tower 連絡通路行 5 分鐘）",
+          "placeId": "tomamu-tower"
+        }
+      ],
+      "mapStops": [
+        "risonare",
+        "tomamu-tower",
+        "tomamu-gondola"
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2026-12-03",
+      "title": "Tomamu 滑雪日 ②（最後一晚）",
+      "locations": [
+        "Tomamu"
+      ],
+      "schedule": [
+        {
+          "id": "d3-1",
+          "time": "08:00",
+          "type": "restaurant",
+          "text": "早餐（到時揀）：森林餐廳／SORA 31F（¥3,000，可用早餐券，櫃台預約）／Mikaku 和食",
+          "placeId": "risonare"
+        },
+        {
+          "id": "d3-2",
+          "time": "09:00",
+          "type": "note",
+          "text": "第二日滑雪；媽媽唔滑都可以去 Mina-Mina／微笑海灘＋SPA",
+          "placeId": "tomamu-tower"
+        },
+        {
+          "id": "d3-3",
+          "time": "12:30",
+          "type": "restaurant",
+          "text": "午餐（hotalu street 到時揀，人均約 ¥1,000–2,000）：CAMARO 牛排／GARAKU 湯咖喱／麵屋竹藏／GIN 海鮮丼",
+          "placeId": "tomamu-tower"
+        },
+        {
+          "id": "d3-4",
+          "time": "15:00",
+          "type": "note",
+          "text": "最後一轉纜車睇日落；18:00 前還裝備",
+          "placeId": "tomamu-gondola"
+        },
+        {
+          "id": "d3-5",
+          "time": "18:30",
+          "type": "restaurant",
+          "text": "晚餐：待定（12/3 暫時唔訂位——候補：SORA 和牛海鮮涮涮鍋 約¥8,000/人 需網上預約／GRILLED AGI 和牛鐵板燒套餐 約¥10,000級 需預約／唔訂就森林餐廳或 hotalu street walk-in）",
+          "placeId": "risonare"
+        },
+        {
+          "id": "d3-6",
+          "time": "21:00",
+          "type": "note",
+          "text": "執行李＋確認聽日巴士：7702 班次 08:40 開，08:00 前退好房（check-out 11:00 前）",
+          "placeId": "risonare"
+        }
+      ],
+      "mapStops": [
+        "risonare",
+        "tomamu-tower"
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2026-12-04",
+      "title": "轉場札幌＋接爸爸會合",
+      "locations": [
+        "Tomamu",
+        "札幌"
+      ],
+      "schedule": [
+        {
+          "id": "d4-1",
+          "time": "07:30",
+          "type": "restaurant",
+          "text": "早餐",
+          "placeId": "risonare"
+        },
+        {
+          "id": "d4-2",
+          "time": "08:00",
+          "type": "check-out",
+          "text": "check-out＋帶行李落 The Tower 巴士站",
+          "placeId": "tomamu-tower"
+        },
+        {
+          "id": "d4-3",
+          "time": "08:40",
+          "type": "transfer",
+          "text": "巴士 7702：Tomamu The Tower → 札幌新大谷酒店（預約編號 2612040000007；約 2.5–3 小時）",
+          "placeIds": [
+            "tomamu-tower",
+            "newotani"
+          ]
+        },
+        {
+          "id": "d4-4",
+          "time": "11:45",
+          "type": "transfer",
+          "text": "新大谷落車 → 行約 3 分鐘到 Hotel Monterey Edelhof（北2条西1丁目1）寄存行李（check-in 15:00 後）",
+          "placeId": "monterey"
+        },
+        {
+          "id": "d4-5",
+          "time": "12:30",
+          "type": "restaurant",
+          "text": "午餐（到時揀）：二条市場海鮮丼（行 12 分鐘；大磯三色丼：海膽＋蟹肉＋鮭魚卵，人均約 ¥2,000–3,500）／札幌站 Stellar Place（快、多選擇）",
+          "placeId": "nijo-market"
+        },
+        {
+          "id": "d4-6",
+          "time": "13:50",
+          "type": "flight",
+          "text": "爸爸抵達 CTS（HB2882）→ JR 快速去札幌站約 37–40 分鐘 → 約 15:00 同佢喺酒店會合",
+          "placeId": "sapporo-st"
+        },
+        {
+          "id": "d4-7",
+          "time": "15:00",
+          "type": "check-in",
+          "text": "三人 check-in／休息",
+          "placeId": "monterey"
+        },
+        {
+          "id": "d4-8",
+          "time": "16:30",
+          "type": "walk",
+          "text": "天黑後去大通公園（酒店行約 8 分鐘）：札幌白色燈飾節（11 下旬–12/25，大通公園 1–3 丁目）＋慕尼黑聖誕市集（2 丁目，熱紅酒＋德國小食），雪夜著燈好靚",
+          "placeId": "odori"
+        },
+        {
+          "id": "d4-9",
+          "time": "19:00",
+          "type": "restaurant",
+          "text": "晚餐：和牛燒肉 徳寿（白老牛專門店，你講嗰間）✅ 目標訂位——推薦分店：札幌駅前店（JR 札幌站南口行 5 分鐘／大通站行 3 分鐘，11:00–23:00，離大通公園最近）或 K-place 店（札幌站前 10F，有夜景位，晚市 17:00–23:00）；晚市人均約 ¥5,000–10,000；週五晚要訂位，可經 Tabelog 訂（你而家有帳號）",
+          "placeId": "odori"
+        }
+      ],
+      "mapStops": [
+        "tomamu-tower",
+        "newotani",
+        "monterey",
+        "odori"
+      ]
+    },
+    {
+      "day": 5,
+      "date": "2026-12-05",
+      "title": "小樽一日遊：運河＋堺町通＋天狗山日落",
+      "locations": [
+        "札幌",
+        "小樽"
+      ],
+      "schedule": [
+        {
+          "id": "d5-1",
+          "time": "08:30",
+          "type": "transfer",
+          "text": "JR 札幌 → 小樽（函館本線，約 35–40 分鐘）",
+          "placeIds": [
+            "sapporo-st",
+            "otaru-st"
+          ]
+        },
+        {
+          "id": "d5-2",
+          "time": "09:15",
+          "type": "restaurant",
+          "text": "午餐（小樽，候補三選一）：滝波食堂（三角市場海膽丼名店，Tabelog 3.54，午市約 ¥3,000–3,999，唔收預約要排隊）／おたる政寿司本店（Tabelog 3.58，午市約 ¥3,000–3,999，可訂位坐得舒服；推介 12 貫握壽司含海膽）／すし田（運河旁，午市約 ¥2,000–2,999，海膽軍艦）",
+          "placeId": "sankaku"
+        },
+        {
+          "id": "d5-3",
+          "time": "10:30",
+          "type": "walk",
+          "text": "沿中央通落斜路 → 小樽運河：由中央橋起步，沿石造倉庫散步道慢慢行去淺草橋",
+          "placeId": "otaru-canal"
+        },
+        {
+          "id": "d5-4",
+          "time": "11:30",
+          "type": "walk",
+          "text": "堺町通り：北一硝子玻璃＋六花亭＋北菓樓＋LeTAO 本店芝士蛋糕；留意動物雜貨小店嘅シマエナガ（白色小鳥）掛件",
+          "placeId": "sakaimachi"
+        },
+        {
+          "id": "d5-5",
+          "time": "12:45",
+          "type": "restaurant",
+          "text": "午餐（小樽，候補三選一）：滝波食堂（三角市場海膽丼，Tabelog 3.54，要排隊）／おたる政寿司本店（3.58，可訂位，坐得舒服）／すし田（運河旁，海膽壽司）",
+          "placeId": "sakaimachi"
+        },
+        {
+          "id": "d5-6",
+          "time": "14:15",
+          "type": "walk",
+          "text": "童話十字路口：蒸汽鐘（每 15 分鐘鳴笛一次）＋小樽音樂盒堂本館（注意冬期關門時間，一般 18:00 前）",
+          "placeId": "meruhen"
+        },
+        {
+          "id": "d5-7",
+          "time": "15:15",
+          "type": "transfer",
+          "text": "返小樽站前（步行約 20 分鐘／散策巴士）→ 搭中央巴士「天狗山ロープウェイ線」約 17–20 分鐘到纜車站",
+          "placeIds": [
+            "otaru-st",
+            "tengudayama"
+          ]
+        },
+        {
+          "id": "d5-8",
+          "time": "15:45",
+          "type": "note",
+          "text": "★ 天狗山纜車上山：12 月日落約 16:00，山頂一次過睇齊日落＋小樽港夜景（北海道三大夜景）——《情書》開場嗰片雪原就係呢座山",
+          "placeId": "tengudayama"
+        },
+        {
+          "id": "d5-9",
+          "time": "17:15",
+          "type": "restaurant",
+          "text": "山頂 TENGUU CAFE 輕食＋等夜景",
+          "placeId": "tengudayama"
+        },
+        {
+          "id": "d5-10",
+          "time": "18:15",
+          "type": "transfer",
+          "text": "落山返小樽站 → JR 返札幌（約 40 分鐘）",
+          "placeIds": [
+            "otaru-st",
+            "sapporo-st"
+          ]
+        },
+        {
+          "id": "d5-11",
+          "time": "19:30",
+          "type": "restaurant",
+          "text": "晚餐（札幌，候補二選一，全部要訂位）：海乃四季（薄野全包廂，海水海膽＋毛蟹＋涮涮鍋，晚市 ¥10,000–14,999）／蟹本家（老牌蟹料理）",
+          "placeId": "tanukikoji"
+        }
+      ],
+      "mapStops": [
+        "sapporo-st",
+        "otaru-st",
+        "sankaku",
+        "otaru-canal",
+        "sakaimachi",
+        "meruhen",
+        "tengudayama"
+      ],
+      "notes": [
+        "Optional｜《冬日未醒》小說場景巡禮：運河中央橋→淺草橋一段本身已喺主路線；想加碼可以去北海道大學（札幌站北面，白楊樹林雪景，免費）——時間唔夠就 skip"
+      ]
+    },
+    {
+      "day": 6,
+      "date": "2026-12-06",
+      "title": "札幌市區自由行（二条市場＋狸小路）",
+      "locations": [
+        "札幌"
+      ],
+      "schedule": [
+        {
+          "id": "d6-1",
+          "time": "08:30",
+          "type": "restaurant",
+          "text": "二条市場海鮮早午餐（蟹／海膽／扇貝，酒店行約 12 分鐘）",
+          "placeId": "nijo-market"
+        },
+        {
+          "id": "d6-2",
+          "time": "10:30",
+          "type": "walk",
+          "text": "狸小路商店街慢慢行（今日 main event）：1–7 丁目全程有蓋，藥妝、手信、古著、甜品——唔使趕，行到攞就去 cafe 抖下",
+          "placeId": "tanukikoji"
+        },
+        {
+          "id": "d6-3",
+          "time": "14:00",
+          "type": "note",
+          "text": "Optional：想去神社嘅話→北海道神宮（地鐵東西線圓山公園站行 15 分鐘，雪中參拜好靚，免費）；唔去就繼續市區自由活動／返酒店抖下",
+          "placeId": "tanukikoji"
+        },
+        {
+          "id": "d6-4",
+          "time": "19:30",
+          "type": "restaurant",
+          "text": "晚餐：蝦蟹合戰札幌本店（蝦・蟹吃到飽 ¥10,500/位）✅ 已訂位（訂位號 8SLTQHQVYX，3 位；南四條西 5 F-45 大樓 12F，薄野站行 3 分鐘）；宵夜可去 Azumasi 牡蠣酒場（厚岸生蠔 12 月當造，約 ¥150–200/隻）",
+          "placeId": "tanukikoji"
+        }
+      ],
+      "mapStops": [
+        "nijo-market",
+        "tanukikoji"
+      ]
+    },
+    {
+      "day": 7,
+      "date": "2026-12-07",
+      "title": "洞爺湖＋登別一日團（KKday ✅ 已訂）",
+      "locations": [
+        "札幌",
+        "洞爺湖",
+        "登別"
+      ],
+      "schedule": [
+        {
+          "id": "d7-1",
+          "time": "08:20",
+          "type": "walk",
+          "text": "酒店出發，行約 8 分鐘去札幌電視塔下集合（08:40 開車，08:25 前到；認住「Easy GO」旗；唔好揾巴士，要揾人）",
+          "placeId": "monterey"
+        },
+        {
+          "id": "d7-2",
+          "time": "08:40",
+          "type": "transfer",
+          "text": "札幌電視塔開車出發 ✅ 已訂 KKday（成人×3，HK$1,407，【冬季限定】包熊牧場入場券；當日 show 憑證上車）",
+          "placeId": "sapporo-st"
+        },
+        {
+          "id": "d7-3",
+          "time": "09:50",
+          "type": "note",
+          "text": "中山峠（休息 10 分鐘）",
+          "placeId": "sapporo-st"
+        },
+        {
+          "id": "d7-4",
+          "time": "10:50",
+          "type": "attraction",
+          "text": "洞爺湖 SAIRO 展望台（25 分鐘）——俯瞰洞爺湖全景＋羊蹄山",
+          "placeId": "sapporo-st"
+        },
+        {
+          "id": "d7-5",
+          "time": "11:30",
+          "type": "restaurant",
+          "text": "洞爺湖溫泉街自由活動＋午餐自理（70 分鐘）：湖邊餐廳自己揀，推介望羊蹄（湖景餐廳）或溫泉街食堂",
+          "placeId": "sapporo-st"
+        },
+        {
+          "id": "d7-6",
+          "time": "12:50",
+          "type": "attraction",
+          "text": "昭和新山＋熊牧場（40 分鐘）——可以餵北海道棕熊（飼料自費）；有珠山纜車自費 ¥2,000/人",
+          "placeId": "sapporo-st"
+        },
+        {
+          "id": "d7-7",
+          "time": "14:25",
+          "type": "attraction",
+          "text": "登別地獄谷（35 分鐘）——雪中地獄谷冒煙超有氣氛，免費",
+          "placeId": "sapporo-st"
+        },
+        {
+          "id": "d7-8",
+          "time": "16:10",
+          "type": "note",
+          "text": "三井 OUTLET PARK 札幌北廣島（90 分鐘）——阿媽可以落去踩場，睇定 12/8 想買嘅嘢",
+          "placeId": "sapporo-st"
+        },
+        {
+          "id": "d7-9",
+          "time": "18:20",
+          "type": "transfer",
+          "text": "18:20 札幌電視塔解散／18:30 札幌東急 REI，行返酒店；晚餐市區自由解決",
+          "placeId": "monterey"
+        },
+        {
+          "id": "d7-10",
+          "time": "21:00",
+          "type": "note",
+          "text": "執行李＋早啲休息（聽日 16:00 機）",
+          "placeId": "monterey"
+        }
+      ],
+      "mapStops": [
+        "monterey"
+      ],
+      "notes": [
+        "訂單產品全名為「洞爺湖溫泉街・登別地獄谷・昭和新山・支笏湖」，即路線可能仲包括支笏湖；各站確實停留時間以當日導遊公布為準"
+      ]
+    },
+    {
+      "day": 8,
+      "date": "2026-12-08",
+      "title": "回程：Rera Outlet → 新千歲機場 → 香港",
+      "locations": [
+        "札幌",
+        "千歲",
+        "新千歲機場"
+      ],
+      "schedule": [
+        {
+          "id": "d8-1",
+          "time": "08:30",
+          "type": "check-out",
+          "text": "Check-out＋拖行李出發（房可以 11:00 前先退，但早去早享受）",
+          "placeId": "monterey"
+        },
+        {
+          "id": "d8-2",
+          "time": "09:00",
+          "type": "transfer",
+          "text": "JR 札幌站搭快速エアポート（往新千歲空港方向，約 15 分鐘一班）→ 南千歲站落車（約 35 分鐘，自由席）",
+          "placeIds": [
+            "sapporo-st",
+            "cts"
+          ]
+        },
+        {
+          "id": "d8-3",
+          "time": "09:40",
+          "type": "walk",
+          "text": "南千歲站行 3 分鐘到千歲 Outlet Rera，行李放入 locker",
+          "placeId": "cts"
+        },
+        {
+          "id": "d8-4",
+          "time": "10:00",
+          "type": "note",
+          "text": "🛍️ Rera 購物（10:00 開門，行到 12:15）：約 150 店——國際品牌、戶外用品、拉麵博覽會、北海道土產區。⚠️ Rera⇄機場免費 shuttle 只得六日同假期行，平日要搭 JR（好彩班次好密）",
+          "placeId": "cts"
+        },
+        {
+          "id": "d8-5",
+          "time": "12:20",
+          "type": "transfer",
+          "text": "JR 南千歲 → 新千歲空港（1 個站，3 分鐘），約 12:30 到機場＝起飛前 3.5 小時 ✅",
+          "placeIds": [
+            "cts",
+            "cts"
+          ]
+        },
+        {
+          "id": "d8-6",
+          "time": "12:30",
+          "type": "note",
+          "text": "🍱 國內線航廈 2F 係手信主戰場（check-in 前買，直接入託運行李唔使抽重）：Royce 巧克力洋芋片、札幌農學校牛奶餅乾（可現烤起司蛋糕）、六花亭葡萄蘭姆夾心、北菓樓開拓米菓、KINOTOYA 現烤起司塔、Calbee+ 薯條三兄弟、柳月三方六、LeTAO 雙層芝士蛋糕；餓咗有北海道拉麵道場",
+          "placeId": "cts"
+        },
+        {
+          "id": "d8-7",
+          "time": "14:00",
+          "type": "note",
+          "text": "國際線 check-in：爸爸 HB881 16:00 → 香港 21:15；你同媽媽 CX581 16:05 → 香港 20:55",
+          "placeId": "cts"
+        },
+        {
+          "id": "d8-8",
+          "time": "14:45",
+          "type": "note",
+          "text": "過關後國際線免稅店最後補貨：白色戀人美冬、Royce 生巧克力、薯條三兄弟（免稅價＋唔佔行李重量，但冇現烤類）",
+          "placeId": "cts"
+        },
+        {
+          "id": "d8-9",
+          "time": "16:05",
+          "type": "flight",
+          "text": "CX581 16:05 起飛／HB881 16:00 起飛 → 香港見 ✈️",
+          "placeId": "cts"
+        }
+      ],
+      "mapStops": [
+        "monterey",
+        "sapporo-st",
+        "cts"
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "cts",
+      "name": "New Chitose Airport",
+      "nameZh": "新千歲機場",
+      "cityOrArea": "千歲",
+      "geo": {
+        "lat": 42.7752,
+        "lng": 141.6922
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "新千歳空港 国際線ターミナル"
+    },
+    {
+      "id": "risonare",
+      "name": "RISONARE Tomamu",
+      "nameZh": "RISONARE Tomamu（酒店）",
+      "cityOrArea": "Tomamu・占冠",
+      "geo": {
+        "lat": 43.0666,
+        "lng": 142.6342
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "RISONAREトマム"
+    },
+    {
+      "id": "tomamu-tower",
+      "name": "The Tower Tomamu",
+      "nameZh": "Tomamu The Tower（巴士點）",
+      "cityOrArea": "Tomamu・占冠",
+      "geo": {
+        "lat": 43.05,
+        "lng": 142.632
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "トマム ザ・タワー"
+    },
+    {
+      "id": "tomamu-gondola",
+      "name": "Unkai Gondola (Muhyo Terrace)",
+      "nameZh": "雲海纜車・霧冰平台",
+      "cityOrArea": "Tomamu・占冠",
+      "geo": {
+        "lat": 43.0525,
+        "lng": 142.6375
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "トマム 雲海ゴンドラ"
+    },
+    {
+      "id": "minamina",
+      "name": "Mina-Mina Beach",
+      "nameZh": "Mina-Mina Beach 室內造浪泳池",
+      "cityOrArea": "Tomamu・占冠",
+      "geo": {
+        "lat": 43.0492,
+        "lng": 142.628
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "Mina-Mina Beach トマム"
+    },
+    {
+      "id": "kirin-no-yu",
+      "name": "Kirin-no-Yu Onsen",
+      "nameZh": "木林之湯（露天風呂）",
+      "cityOrArea": "Tomamu・占冠",
+      "geo": {
+        "lat": 43.051,
+        "lng": 142.6315
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "木林の湯 トマム"
+    },
+    {
+      "id": "sapporo-st",
+      "name": "JR Sapporo Station",
+      "nameZh": "札幌站",
+      "cityOrArea": "札幌",
+      "geo": {
+        "lat": 43.0687,
+        "lng": 141.3508
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "JR札幌駅"
+    },
+    {
+      "id": "monterey",
+      "name": "Hotel Monterey Edelhof Sapporo",
+      "nameZh": "Hotel Monterey Edelhof（酒店）",
+      "cityOrArea": "札幌・站前",
+      "geo": {
+        "lat": 43.0642,
+        "lng": 141.3476
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "ホテルモントレエーデルホフ札幌"
+    },
+    {
+      "id": "newotani",
+      "name": "New Otani Inn Sapporo",
+      "nameZh": "新大谷酒店札幌（巴士落車點）",
+      "cityOrArea": "札幌・站前",
+      "geo": {
+        "lat": 43.0638,
+        "lng": 141.346
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "ニューオータニイン札幌"
+    },
+    {
+      "id": "nijo-market",
+      "name": "Nijo Market",
+      "nameZh": "二条市場",
+      "cityOrArea": "札幌",
+      "geo": {
+        "lat": 43.0663,
+        "lng": 141.3611
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "二条市場"
+    },
+    {
+      "id": "odori-tv",
+      "name": "Odori Park & Sapporo TV Tower",
+      "nameZh": "大通公園・札幌電視塔",
+      "cityOrArea": "札幌・大通",
+      "geo": {
+        "lat": 43.0607,
+        "lng": 141.3536
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "さっぽろテレビ塔"
+    },
+    {
+      "id": "tanukikoji",
+      "name": "Tanukikoji Shopping Street",
+      "nameZh": "貍小路商店街",
+      "cityOrArea": "札幌・薄野",
+      "geo": {
+        "lat": 43.058,
+        "lng": 141.354
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "狸小路商店街"
+    },
+    {
+      "id": "beer-museum",
+      "name": "Sapporo Beer Garden",
+      "nameZh": "札幌啤酒園（博物館）",
+      "cityOrArea": "札幌・東區",
+      "geo": {
+        "lat": 43.0708,
+        "lng": 141.3689
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "サッポロビール園"
+    },
+    {
+      "id": "hokkaido-jingu",
+      "name": "Hokkaido Shrine",
+      "nameZh": "北海道神宮",
+      "cityOrArea": "札幌・圓山",
+      "geo": {
+        "lat": 43.0561,
+        "lng": 141.3189
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "北海道神宮"
+    },
+    {
+      "id": "hokkaido-univ",
+      "name": "Hokkaido University",
+      "nameZh": "北海道大學（Optional《冬日未醒》場景）",
+      "cityOrArea": "札幌・站北",
+      "geo": {
+        "lat": 43.0745,
+        "lng": 141.3407
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "北海道大学 札幌キャンパス"
+    },
+    {
+      "id": "otaru-st",
+      "name": "JR Otaru Station",
+      "nameZh": "小樽站",
+      "cityOrArea": "小樽",
+      "geo": {
+        "lat": 43.1978,
+        "lng": 140.9937
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "JR小樽駅"
+    },
+    {
+      "id": "otaru-canal",
+      "name": "Otaru Canal",
+      "nameZh": "小樽運河",
+      "cityOrArea": "小樽",
+      "geo": {
+        "lat": 43.1912,
+        "lng": 140.9947
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "小樽運河"
+    },
+    {
+      "id": "sakaimachi",
+      "name": "Sakaimachi Street / LeTAO",
+      "nameZh": "堺町通り・LeTAO 本店",
+      "cityOrArea": "小樽",
+      "geo": {
+        "lat": 43.1908,
+        "lng": 140.9947
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "LeTAO 本店 小樽"
+    },
+    {
+      "id": "sankaku",
+      "name": "Sankaku Market",
+      "nameZh": "三角市場",
+      "cityOrArea": "小樽",
+      "geo": {
+        "lat": 43.1986,
+        "lng": 140.9945
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "小樽 三角市場"
+    },
+    {
+      "id": "meruhen",
+      "name": "Marchen Crossroads & Music Box Museum",
+      "nameZh": "童話十字路口・蒸汽鐘・音樂盒堂",
+      "cityOrArea": "小樽",
+      "geo": {
+        "lat": 43.1901,
+        "lng": 141.0074
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "小樽 メルヘン交差点 オルゴール堂"
+    },
+    {
+      "id": "tengudayama",
+      "name": "Mt. Tengudayama Summit",
+      "nameZh": "天狗山山頂展望台 ✨",
+      "cityOrArea": "小樽",
+      "geo": {
+        "lat": 43.1719,
+        "lng": 140.9718
+      },
+      "countryCode": "JP",
+      "googleMapsQuery": "小樽天狗山ロープウェイ"
+    }
+  ],
+  "restaurants": [],
+  "bookingsAndTickets": [
+    {
+      "item": "KKday 洞爺湖＋登別一日團（12/7，3 位）",
+      "status": "✅ 已訂（已付款）",
+      "how": "已訂：【冬季限定】包熊牧場入場券版，2026/12/7，成人×3，共 HK$1,407；景點揀「洞爺湖溫泉街」；08:40 札幌電視塔上車；憑證已寄出，當日 show 憑證",
+      "link": "https://www.kkday.com/zh-hk/product/11257-day-tour-from-hokkaido-lake-toya-showa-shinzan-and-jigokudani"
+    },
+    {
+      "item": "hal 自助餐 12/2",
+      "status": "✅ 已訂（72628）",
+      "how": "現地付款 ¥11,000"
+    },
+    {
+      "item": "蝦蟹合戰 12/6",
+      "status": "✅ 已訂（8SLTQHQVYX）",
+      "how": "現地付款 ¥31,500"
+    },
+    {
+      "item": "機場⇄Tomamu 巴士（12/1 去程 707 班次 16:30／12/4 回程 7702 班次 08:40）",
+      "status": "✅ 已訂",
+      "how": "當日 show 預約編號"
+    },
+    {
+      "item": "天狗山纜車（12/5）",
+      "status": "現場買飛",
+      "how": "來回約 ¥1,600/人，唔使預約"
+    },
+    {
+      "item": "SORA 早餐（12/3 想食嘅話）",
+      "status": "入住後預約",
+      "how": "RISONARE 櫃台或內線 6365，¥3,000/人可用早餐券"
+    },
+    {
+      "item": "12/3 Tomamu 晚餐",
+      "status": "未定",
+      "how": "SORA 涮涮鍋要網上預約；GRILLED AGI 要預約；或者 walk-in"
+    },
+    {
+      "item": "小樽音樂盒堂／北大／北海道神宮／聖誕市集",
+      "status": "免費或現場",
+      "how": "唔使預約"
+    },
+    {
+      "item": "JR 全部路段（札幌⇄小樽、札幌→南千歲→機場、爸爸機場→札幌）",
+      "status": "唔使劃位",
+      "how": "全部自由席，現場買票或拍 IC 卡"
+    }
+  ],
+  "ticketPlanning": {
+    "statusStorage": "local",
+    "statusStorageNote": "门票状态默认只保存在当前浏览器。",
+    "items": []
+  },
+  "preTrip": {
+    "packingItems": [
+      {
+        "id": "todo-skiwear",
+        "text": "滑雪服檢查：唔夠就網購比價（京東／淘寶／小紅書）",
+        "completed": false
+      },
+      {
+        "id": "todo-passport",
+        "text": "確認護照有效期（入境日本需 6 個月以上）",
+        "completed": false
+      },
+      {
+        "id": "todo-esim",
+        "text": "買日本 eSIM／漫遊數據",
+        "completed": false
+      },
+      {
+        "id": "todo-tomamu-weather",
+        "text": "出發前一日查 Tomamu 天氣＋纜車運行狀況",
+        "completed": false
+      },
+      {
+        "id": "todo-tengu-hours",
+        "text": "12/5 前確認天狗山纜車冬期營業時間（日落前上山）",
+        "completed": false
+      },
+      {
+        "id": "todo-restaurants",
+        "text": "已訂餐廳名單 send 俾 Kimi 補入行程",
+        "completed": false
+      },
+      {
+        "id": "todo-hal-booking",
+        "text": "hal 自助餐已訂 ✅：12/2 17:30 兩位，訂位號 72628，現地付款 ¥11,000（確認信 → Alysia 嘅 Gmail；前日取消 50%／當日 100%）",
+        "completed": true
+      },
+      {
+        "id": "pack-base",
+        "text": "保暖內衣（HEATTECH）＋抓絨中層——滑雪同市區都用得著",
+        "completed": false
+      },
+      {
+        "id": "pack-skiwear",
+        "text": "滑雪外層：雪服雪褲護目鏡手套——Tower base 有得租，決定租定自己帶",
+        "completed": false
+      },
+      {
+        "id": "pack-boots",
+        "text": "防水防滑靴（札幌／小樽雪地步道好滑，普通波鞋唔得）",
+        "completed": false
+      },
+      {
+        "id": "pack-acc",
+        "text": "冷帽＋頸巾＋耳罩＋可觸屏手套",
+        "completed": false
+      },
+      {
+        "id": "pack-goggles",
+        "text": "太陽眼鏡（雪地反光好刺眼，滑雪護目鏡唔通用）",
+        "completed": false
+      },
+      {
+        "id": "pack-swim",
+        "text": "泳衣（Mina-Mina Beach 室內造浪泳池要用；浸溫泉唔使）",
+        "completed": false
+      },
+      {
+        "id": "pack-skin",
+        "text": "潤膚露＋潤唇膏（北海道室內暖氣好乾）",
+        "completed": false
+      },
+      {
+        "id": "pack-med",
+        "text": "常用藥、退燒藥、膠布＋旅行保險（記得包滑雪意外）",
+        "completed": false
+      },
+      {
+        "id": "pack-cash",
+        "text": "日圓現金——Suage+ 等小店只收現金／PayPay",
+        "completed": false
+      },
+      {
+        "id": "pack-plug",
+        "text": "充電器＋轉插（日本係兩腳扁插，香港三腳要轉）",
+        "completed": false
+      },
+      {
+        "id": "pack-heat",
+        "text": "暖包（暖手用，當地便利店都有得買）",
+        "completed": false
+      },
+      {
+        "id": "pack-mask",
+        "text": "口罩＋潤喉糖（室內外溫差大）",
+        "completed": false
+      }
+    ],
+    "preparationsExplicitlyMentioned": [],
+    "missingNote": ""
+  },
+  "mapLinks": {
+    "providedGoogleMapsLinks": [
+      {
+        "day": "12/1",
+        "label": "新千歲機場 → Tomamu（度假村巴士）",
+        "url": "https://www.google.com/maps/dir/?api=1&origin=New+Chitose+Airport&destination=Hoshino+Resorts+Tomamu+The+Tower&travelmode=driving"
+      },
+      {
+        "day": "12/4",
+        "label": "Tomamu → 札幌 Hotel Monterey Edelhof（巴士後步行）",
+        "url": "https://www.google.com/maps/dir/?api=1&origin=Hoshino+Resorts+Tomamu+The+Tower&destination=Hotel+Monterey+Edelhof+Sapporo&travelmode=transit"
+      },
+      {
+        "day": "12/4",
+        "label": "新千歲機場 → 札幌站（爸爸 JR 路線）",
+        "url": "https://www.google.com/maps/dir/?api=1&origin=New+Chitose+Airport&destination=Sapporo+Station&travelmode=transit"
+      },
+      {
+        "day": "12/5",
+        "label": "札幌站 → 小樽運河 → 天狗山纜車 → 札幌",
+        "url": "https://www.google.com/maps/dir/?api=1&origin=Sapporo+Station&destination=Sapporo+Station&waypoints=Otaru+Canal|Otaru+Tenguyama+Ropeway&travelmode=transit"
+      },
+      {
+        "day": "12/6",
+        "label": "酒店 → 二条市場 → 狸小路 → 蝦蟹合戰",
+        "url": "https://www.google.com/maps/dir/?api=1&origin=Hotel+Monterey+Edelhof+Sapporo&destination=南四条西5丁目+札幌&waypoints=Nijo+Market+Sapporo|Tanukikoji+Shopping+Arcade&travelmode=walking"
+      },
+      {
+        "day": "12/7",
+        "label": "酒店 → 札幌電視塔（集合點，步行）",
+        "url": "https://www.google.com/maps/dir/?api=1&origin=Hotel+Monterey+Edelhof+Sapporo&destination=Sapporo+TV+Tower&travelmode=walking"
+      },
+      {
+        "day": "12/8",
+        "label": "札幌站 → 南千歲（Rera）→ 新千歲機場",
+        "url": "https://www.google.com/maps/dir/?api=1&origin=Sapporo+Station&destination=New+Chitose+Airport&waypoints=Minami-Chitose+Station&travelmode=transit"
+      },
+      {
+        "day": "12/4",
+        "label": "酒店 → 大通公園（燈飾）→ 徳寿札幌駅前店（步行）",
+        "url": "https://www.google.com/maps/dir/?api=1&origin=Hotel+Monterey+Edelhof+Sapporo&destination=焼肉+徳寿+札幌駅前店&waypoints=Odori+Park&travelmode=walking"
+      }
+    ],
+    "note": "日本導航用 Google Maps（地鐵、巴士、步行路線都齊）。",
+    "cityLevelNavigationDisabled": false,
+    "navigationPolicy": {
+      "noNavigationTypes": [
+        "flight",
+        "note",
+        "rest"
+      ],
+      "selfNavigationTypes": [
+        "drive",
+        "return",
+        "transfer",
+        "check-in",
+        "check-out",
+        "restaurant",
+        "attraction",
+        "walk",
+        "hike"
+      ]
+    },
+    "navigationPlaces": []
+  },
+  "issuesAndUncertainties": [
+    "已訂嘅餐廳名單未提供，之後補入每日行程",
+    "12/7 自由日未定：定山溪溫泉 vs 市區購物 vs 再入小樽（美瑛已剔除：爸爸去過，對聖誕樹冇興趣）",
+    "Tomamu 晚餐：12/1 森林餐廳（到埗日唔訂位）、12/2 hal 已訂（訂位號 72628）、12/3 待定",
+    "爸爸 12/4 一個人由 CTS 去札幌（JR 約 40 分鐘），15:00 先可以 check-in，行李可寄存",
+    "Tomamu 巴士落車點係 The Tower／札幌落車點係新大谷，兩邊都要行路或轉接駁"
+  ],
+  "map": {
+    "schemaVersion": "1.0-lite",
+    "mapMode": "template-auto",
+    "templateId": "auto",
+    "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+    "region": {
+      "id": "jp-hokkaido",
+      "label": "北海道",
+      "countryCode": "JP"
+    },
+    "places": [
+      {
+        "id": "cts",
+        "name": "New Chitose Airport",
+        "nameZh": "新千歲機場",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 42.7752,
+          "lng": 141.6922
+        }
+      },
+      {
+        "id": "risonare",
+        "name": "RISONARE Tomamu",
+        "nameZh": "RISONARE Tomamu",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.0666,
+          "lng": 142.6342
+        }
+      },
+      {
+        "id": "tomamu-tower",
+        "name": "The Tower Tomamu",
+        "nameZh": "Tomamu The Tower",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.05,
+          "lng": 142.632
+        }
+      },
+      {
+        "id": "tomamu-gondola",
+        "name": "Unkai Gondola",
+        "nameZh": "雲海纜車・霧冰平台",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.0525,
+          "lng": 142.6375
+        }
+      },
+      {
+        "id": "minamina",
+        "name": "Mina-Mina Beach",
+        "nameZh": "Mina-Mina Beach",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.0492,
+          "lng": 142.628
+        }
+      },
+      {
+        "id": "kirin-no-yu",
+        "name": "Kirin-no-Yu",
+        "nameZh": "木林之湯",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.051,
+          "lng": 142.6315
+        }
+      },
+      {
+        "id": "sapporo-st",
+        "name": "JR Sapporo Station",
+        "nameZh": "札幌站",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.0687,
+          "lng": 141.3508
+        }
+      },
+      {
+        "id": "monterey",
+        "name": "Hotel Monterey Edelhof",
+        "nameZh": "Hotel Monterey Edelhof",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.0642,
+          "lng": 141.3476
+        }
+      },
+      {
+        "id": "newotani",
+        "name": "New Otani Inn Sapporo",
+        "nameZh": "新大谷酒店（巴士點）",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.0638,
+          "lng": 141.346
+        }
+      },
+      {
+        "id": "nijo-market",
+        "name": "Nijo Market",
+        "nameZh": "二条市場",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.0663,
+          "lng": 141.3611
+        }
+      },
+      {
+        "id": "odori-tv",
+        "name": "Odori Park & TV Tower",
+        "nameZh": "大通公園・電視塔",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.0607,
+          "lng": 141.3536
+        }
+      },
+      {
+        "id": "tanukikoji",
+        "name": "Tanukikoji",
+        "nameZh": "貍小路商店街",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.058,
+          "lng": 141.354
+        }
+      },
+      {
+        "id": "beer-museum",
+        "name": "Sapporo Beer Garden",
+        "nameZh": "札幌啤酒園",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.0708,
+          "lng": 141.3689
+        }
+      },
+      {
+        "id": "hokkaido-jingu",
+        "name": "Hokkaido Shrine",
+        "nameZh": "北海道神宮",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.0561,
+          "lng": 141.3189
+        }
+      },
+      {
+        "id": "hokkaido-univ",
+        "name": "Hokkaido University",
+        "nameZh": "北海道大學",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.0745,
+          "lng": 141.3407
+        }
+      },
+      {
+        "id": "otaru-st",
+        "name": "JR Otaru Station",
+        "nameZh": "小樽站",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.1978,
+          "lng": 140.9937
+        }
+      },
+      {
+        "id": "otaru-canal",
+        "name": "Otaru Canal",
+        "nameZh": "小樽運河",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.1912,
+          "lng": 140.9947
+        }
+      },
+      {
+        "id": "sakaimachi",
+        "name": "Sakaimachi / LeTAO",
+        "nameZh": "堺町通り・LeTAO",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.1908,
+          "lng": 140.9947
+        }
+      },
+      {
+        "id": "sankaku",
+        "name": "Sankaku Market",
+        "nameZh": "三角市場",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.1986,
+          "lng": 140.9945
+        }
+      },
+      {
+        "id": "meruhen",
+        "name": "Marchen Crossroads",
+        "nameZh": "童話十字路口・音樂盒堂",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.1901,
+          "lng": 141.0074
+        }
+      },
+      {
+        "id": "tengudayama",
+        "name": "Mt. Tengudayama",
+        "nameZh": "天狗山展望台 ✨",
+        "countryCode": "JP",
+        "mapRegionId": "jp-hokkaido",
+        "geo": {
+          "lat": 43.1719,
+          "lng": 140.9718
+        }
+      }
+    ],
+    "routes": [
+      {
+        "day": 1,
+        "placeIds": [
+          "cts",
+          "tomamu-tower",
+          "risonare"
+        ]
+      },
+      {
+        "day": 2,
+        "placeIds": [
+          "risonare",
+          "tomamu-tower"
+        ]
+      },
+      {
+        "day": 3,
+        "placeIds": [
+          "risonare",
+          "tomamu-tower"
+        ]
+      },
+      {
+        "day": 4,
+        "placeIds": [
+          "risonare",
+          "tomamu-tower",
+          "sapporo-st",
+          "monterey"
+        ]
+      },
+      {
+        "day": 5,
+        "placeIds": [
+          "sapporo-st",
+          "otaru-st",
+          "sankaku",
+          "otaru-canal",
+          "sakaimachi",
+          "meruhen",
+          "tengudayama"
+        ]
+      },
+      {
+        "day": 6,
+        "placeIds": [
+          "monterey",
+          "nijo-market",
+          "hokkaido-univ",
+          "odori-tv",
+          "tanukikoji",
+          "beer-museum"
+        ]
+      },
+      {
+        "day": 7,
+        "placeIds": [
+          "monterey"
+        ]
+      },
+      {
+        "day": 8,
+        "placeIds": [
+          "monterey",
+          "sapporo-st",
+          "cts"
+        ]
+      }
+    ],
+    "dailyRoutes": [
+      {
+        "day": 1,
+        "placeIds": [
+          "cts",
+          "tomamu-tower",
+          "risonare"
+        ]
+      },
+      {
+        "day": 2,
+        "placeIds": [
+          "risonare",
+          "tomamu-tower",
+          "tomamu-gondola"
+        ]
+      },
+      {
+        "day": 3,
+        "placeIds": [
+          "risonare",
+          "tomamu-tower"
+        ]
+      },
+      {
+        "day": 4,
+        "placeIds": [
+          "risonare",
+          "tomamu-tower",
+          "newotani",
+          "monterey"
+        ]
+      },
+      {
+        "day": 5,
+        "placeIds": [
+          "sapporo-st",
+          "otaru-st",
+          "sankaku",
+          "otaru-canal",
+          "sakaimachi",
+          "meruhen",
+          "tengudayama"
+        ]
+      },
+      {
+        "day": 6,
+        "placeIds": [
+          "monterey",
+          "nijo-market",
+          "hokkaido-univ",
+          "odori-tv",
+          "tanukikoji",
+          "beer-museum"
+        ]
+      },
+      {
+        "day": 7,
+        "placeIds": [
+          "monterey"
+        ]
+      },
+      {
+        "day": 8,
+        "placeIds": [
+          "monterey",
+          "sapporo-st",
+          "cts"
+        ]
+      }
+    ]
+  },
+  "googleMapAreas": [
+    {
+      "id": "tomamu",
+      "label": "Tomamu 度假村",
+      "stops": [
+        "risonare",
+        "tomamu-tower",
+        "tomamu-gondola",
+        "minamina",
+        "kirin-no-yu"
+      ]
+    },
+    {
+      "id": "sapporo",
+      "label": "札幌市區",
+      "stops": [
+        "monterey",
+        "sapporo-st",
+        "newotani",
+        "nijo-market",
+        "odori-tv",
+        "tanukikoji",
+        "beer-museum",
+        "hokkaido-jingu",
+        "hokkaido-univ"
+      ]
+    },
+    {
+      "id": "otaru",
+      "label": "小樽",
+      "stops": [
+        "otaru-st",
+        "sankaku",
+        "otaru-canal",
+        "sakaimachi",
+        "meruhen",
+        "tengudayama"
+      ]
+    }
+  ],
+  "routeMap": {
+    "schemaVersion": "1.0-lite",
+    "mapMode": "template-auto",
+    "templateId": "auto",
+    "defaultRegionId": "jp-hokkaido",
+    "regions": [
+      {
+        "id": "jp-hokkaido",
+        "label": "北海道",
+        "countryCode": "JP",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "hokkaido-winter",
+        "mapModeReason": "two-cluster-trip",
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/hokkaido-base.png",
+        "title": "北海道 · 旅行路线",
+        "ariaLabel": "北海道旅行路线示意图，共8天",
+        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "heading": {
+          "text": "北海道 HOKKAIDO",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [
+          {
+            "text": "石狩灣 ISHIKARI BAY",
+            "x": 100,
+            "y": 62,
+            "size": 19
+          },
+          {
+            "text": "小樽 OTARU",
+            "x": 60,
+            "y": 330,
+            "size": 19
+          },
+          {
+            "text": "札幌 SAPPORO",
+            "x": 300,
+            "y": 630,
+            "size": 19
+          },
+          {
+            "text": "TOMAMU",
+            "x": 1200,
+            "y": 545,
+            "size": 19
+          },
+          {
+            "text": "十勝平原 TOKACHI",
+            "x": 1290,
+            "y": 660,
+            "size": 17
+          }
+        ],
+        "routes": [
+          {
+            "day": 1,
+            "color": "#397dc1",
+            "placeIds": [
+              "cts",
+              "tomamu-tower",
+              "risonare"
+            ]
+          },
+          {
+            "day": 2,
+            "color": "#4a90d9",
+            "placeIds": [
+              "risonare",
+              "tomamu-tower"
+            ]
+          },
+          {
+            "day": 3,
+            "color": "#5aa2e0",
+            "placeIds": [
+              "risonare",
+              "tomamu-tower"
+            ]
+          },
+          {
+            "day": 4,
+            "color": "#d6453d",
+            "placeIds": [
+              "risonare",
+              "tomamu-tower",
+              "sapporo-st",
+              "monterey"
+            ]
+          },
+          {
+            "day": 5,
+            "color": "#e77e22",
+            "placeIds": [
+              "sapporo-st",
+              "otaru-st",
+              "sankaku",
+              "otaru-canal",
+              "sakaimachi",
+              "meruhen",
+              "tengudayama"
+            ]
+          },
+          {
+            "day": 6,
+            "color": "#618344",
+            "placeIds": [
+              "monterey",
+              "nijo-market",
+              "hokkaido-univ",
+              "odori-tv",
+              "tanukikoji",
+              "beer-museum"
+            ]
+          },
+          {
+            "day": 7,
+            "color": "#209aaa",
+            "placeIds": [
+              "monterey"
+            ]
+          },
+          {
+            "day": 8,
+            "color": "#8865a5",
+            "placeIds": [
+              "monterey",
+              "sapporo-st",
+              "cts"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "cts",
+            "x": 640,
+            "y": 913,
+            "color": "#397dc1",
+            "tx": 672,
+            "ty": 908,
+            "anchor": "start",
+            "size": 24,
+            "lines": [
+              "新千歲機場 /",
+              "New Chitose Airport"
+            ]
+          },
+          {
+            "id": "risonare",
+            "x": 1313,
+            "y": 387,
+            "color": "#397dc1",
+            "tx": 1281,
+            "ty": 352,
+            "anchor": "end",
+            "size": 24,
+            "lines": [
+              "RISONARE Tomamu /",
+              "（滑雪 3 晚）"
+            ]
+          },
+          {
+            "id": "tomamu-tower",
+            "x": 1311,
+            "y": 417,
+            "color": "#397dc1",
+            "tx": 1255,
+            "ty": 452,
+            "anchor": "end",
+            "size": 24,
+            "lines": [
+              "Tomamu The Tower /",
+              "（巴士上落點）"
+            ]
+          },
+          {
+            "id": "sapporo-st",
+            "x": 396,
+            "y": 383,
+            "color": "#397dc1",
+            "tx": 364,
+            "ty": 350,
+            "anchor": "end",
+            "size": 24,
+            "lines": [
+              "札幌站 /",
+              "Sapporo Stn."
+            ]
+          },
+          {
+            "id": "monterey",
+            "x": 370,
+            "y": 415,
+            "color": "#397dc1",
+            "tx": 338,
+            "ty": 448,
+            "anchor": "end",
+            "size": 24,
+            "lines": [
+              "Hotel Monterey /",
+              "Edelhof（4 晚）"
+            ]
+          },
+          {
+            "id": "newotani",
+            "x": 470,
+            "y": 360,
+            "color": "#397dc1",
+            "tx": 502,
+            "ty": 355,
+            "anchor": "start",
+            "size": 24,
+            "lines": [
+              "新大谷酒店 /",
+              "（巴士落車點）"
+            ]
+          },
+          {
+            "id": "nijo-market",
+            "x": 540,
+            "y": 400,
+            "color": "#397dc1",
+            "tx": 572,
+            "ty": 395,
+            "anchor": "start",
+            "size": 24,
+            "lines": [
+              "二条市場 /",
+              "Nijo Market"
+            ]
+          },
+          {
+            "id": "beer-museum",
+            "x": 540,
+            "y": 330,
+            "color": "#397dc1",
+            "tx": 572,
+            "ty": 325,
+            "anchor": "start",
+            "size": 24,
+            "lines": [
+              "札幌啤酒園 /",
+              "Sapporo Beer Garden"
+            ]
+          },
+          {
+            "id": "odori-tv",
+            "x": 430,
+            "y": 480,
+            "color": "#397dc1",
+            "tx": 462,
+            "ty": 475,
+            "anchor": "start",
+            "size": 24,
+            "lines": [
+              "大通公園・電視塔 /",
+              "Odori & TV Tower"
+            ]
+          },
+          {
+            "id": "tanukikoji",
+            "x": 405,
+            "y": 545,
+            "color": "#397dc1",
+            "tx": 437,
+            "ty": 540,
+            "anchor": "start",
+            "size": 24,
+            "lines": [
+              "貍小路商店街 /",
+              "Tanukikoji Arcade"
+            ]
+          },
+          {
+            "id": "hokkaido-jingu",
+            "x": 290,
+            "y": 520,
+            "color": "#397dc1",
+            "tx": 258,
+            "ty": 555,
+            "anchor": "end",
+            "size": 24,
+            "lines": [
+              "北海道神宮 /",
+              "Hokkaido Shrine"
+            ]
+          },
+          {
+            "id": "hokkaido-univ",
+            "x": 350,
+            "y": 330,
+            "color": "#397dc1",
+            "tx": 318,
+            "ty": 325,
+            "anchor": "end",
+            "size": 24,
+            "lines": [
+              "北海道大學 /",
+              "Hokkaido Univ. ✨"
+            ]
+          },
+          {
+            "id": "otaru-st",
+            "x": 141,
+            "y": 150,
+            "color": "#397dc1",
+            "tx": 173,
+            "ty": 145,
+            "anchor": "start",
+            "size": 24,
+            "lines": [
+              "小樽駅 /",
+              "Otaru Stn."
+            ]
+          },
+          {
+            "id": "otaru-canal",
+            "x": 210,
+            "y": 215,
+            "color": "#397dc1",
+            "tx": 242,
+            "ty": 210,
+            "anchor": "start",
+            "size": 24,
+            "lines": [
+              "小樽運河 /",
+              "Otaru Canal"
+            ]
+          },
+          {
+            "id": "sakaimachi",
+            "x": 285,
+            "y": 255,
+            "color": "#397dc1",
+            "tx": 317,
+            "ty": 250,
+            "anchor": "start",
+            "size": 24,
+            "lines": [
+              "堺町通り・LeTAO /",
+              "Sakaimachi St."
+            ]
+          },
+          {
+            "id": "sankaku",
+            "x": 165,
+            "y": 180,
+            "color": "#397dc1",
+            "tx": 197,
+            "ty": 175,
+            "anchor": "start",
+            "size": 24,
+            "lines": [
+              "三角市場 /",
+              "Sankaku Market"
+            ]
+          },
+          {
+            "id": "meruhen",
+            "x": 330,
+            "y": 290,
+            "color": "#397dc1",
+            "tx": 362,
+            "ty": 285,
+            "anchor": "start",
+            "size": 24,
+            "lines": [
+              "童話十字路口 /",
+              "Marchen Crossing"
+            ]
+          },
+          {
+            "id": "tengudayama",
+            "x": 100,
+            "y": 250,
+            "color": "#397dc1",
+            "tx": 132,
+            "ty": 282,
+            "anchor": "start",
+            "size": 24,
+            "lines": [
+              "天狗山山頂展望台 /",
+              "Tengudayama ✨"
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "cts",
+          "risonare",
+          "tomamu-tower",
+          "sapporo-st",
+          "monterey",
+          "newotani",
+          "nijo-market",
+          "beer-museum",
+          "odori-tv",
+          "tanukikoji",
+          "hokkaido-jingu",
+          "hokkaido-univ",
+          "otaru-st",
+          "otaru-canal",
+          "sakaimachi",
+          "sankaku",
+          "meruhen",
+          "tengudayama"
+        ]
+      }
+    ]
+  }
+}
